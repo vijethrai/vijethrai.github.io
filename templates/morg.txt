@@ -1,0 +1,4 @@
+magick mogrify -path thumbs/ -resize 200 originals/*
+
+magick mogrify -path full/ -resize 2000 orginals/*
+
