@@ -1,0 +1,40 @@
+<!-- ResumeLay--> 
+  <section class="page-section" id="{{ site.data.sitetext.misc.section | default: "Full Bio" }}">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">{{ site.data.sitetext.misc.title | default: "" }}</h2>
+
+        </div>
+      </div>
+
+    </div>
+
+<div class="row">
+  <div class="col-lg-12 text-center">
+<!-- 
+  <h3 <br/><a href="raiCV_html.html" class="button">Full CV</a></h3>
+
+  <button onclick="document.location='raiCV_html.html'">CV</button>
+
+ -->
+
+    <div class="row text-center">
+    {% for misc in site.data.sitetext.misc.list %}
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="{{ misc.icon | default: "fas fa-shopping-cart" }} fa-stack-1x fa-inverse"></i>
+          </span>
+          {% if misc.desc %}
+          <!-- <div class="text-muted">{{ service.desc | markdownify }}</div> -->
+          <h4 <br/><a href="{{misc.link}}" class="button"><div class="text-muted">{{ misc.desc | markdownify }}</div></a></h4>
+          {% endif %}
+        </div>
+    {% endfor %}
+      </div>
+
+
+  </section>
+<!-- End ResumeLay

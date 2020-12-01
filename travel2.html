@@ -1,0 +1,78 @@
+---
+
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="splide-2.4.20/dist/js/splide.min.js"></script>
+	<link rel="stylesheet" href="splide-2.4.20/dist/css/splide.min.css">
+
+	<div id="secondary-slider" class="splide">
+	<div class="splide__track">
+		<ul class="splide__list">
+
+ 		    {% assign image_files = site.static_files | where: "image", true %}
+			{% for myimage in image_files %}
+  			  <li class="splide__slide"> 
+  			      	<img src="{{myimage.path | append: "/thumbs"}}" >
+    		</li>
+			{% endfor %}
+
+		</ul>
+	</div>
+</div>
+
+
+ 	<div id="primary-slider" class="splide">
+	<div class="splide__track">
+		<ul class="splide__list">
+	 	  {% assign image_files = site.static_files | where: "image", true %}
+			{% for myimage in image_files %}
+  			  <li class="splide__slide"> 
+  			      	<img src="{{myimage.path | append: "/full"}}" >
+    		</li>
+			{% endfor %}
+ 		    		
+
+ 		 </ul>
+	</div>
+</div>
+
+
+<script>
+
+
+document.addEventListener( 'DOMContentLoaded', function () {
+	var secondarySlider = new Splide( '#secondary-slider', {
+		fixedWidth  : 100,
+		height      : 100,
+		gap         : 20,
+		cover       : true,
+		isNavigation: true,
+		perPage: 5,
+		focus       : 'center',
+		breakpoints : {
+			'600': {
+				fixedWidth: 66,
+				height    : 40,
+			}
+		},
+	} ).mount();
+	
+	var primarySlider = new Splide( '#primary-slider', {
+		type       : 'fade',
+		cover     : true,
+		heightRatio: 0.6,
+		pagination : false,
+		arrows     : false,
+		cover      : true,
+	} ); // do not call mount() here.
+	
+	primarySlider.sync( secondarySlider ).mount();
+} );
+
+
+
+</script>
+

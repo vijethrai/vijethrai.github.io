@@ -1,0 +1,135 @@
+header:
+    title: Vijeth Rai
+    text: Freelance Rehabilitation Engineer
+    button: Skills
+    buttonlink: "#services"
+
+services:
+    title: "Skills"
+    text: "Expertise Offered"
+    section: services
+    list:
+      - title: "Machine Learning"
+        desc: "Deep-learning, Time-series Analysis, Vision"
+        icon: fas fa-brain #find more at https://fontawesome.com/icons
+      - title: "Bionics"
+        desc: "Bio-mechanics, Prosthetics, Locomotion, EMG"
+        icon: fas fa-assistive-listening-systems
+      - title: "Robotics"
+        desc: "Embedded sytems, Control, Sensors, Mechatronics, PCB design"
+        icon: fas fa-robot         
+
+
+portfolio:
+    title: "Portfolio"
+    text: "Projects that I've worked on "
+    section: portfolio
+    closebutton: "Close Project"
+    
+
+timeline:
+    title: "Work Ex" 
+    text: "A timeline of my vocational journey"
+    section: timeline
+    # left is the default
+    #start_align: "left"
+    events:
+      - title: "Phd <br> University of Washington <br> Researcher at Veterans Affairs Hospital"
+        year: "2014-2020"
+        desc: "Intuitive control of powered prosthetic legs using computer vision and natural body movements by applying machine learning."
+        image: assets/images/Bronze-W.jpg
+        alt: 
+      - title: "Research Engineer <br> Rehabiliation Institute of Chicago <br> Argall Lab"
+        year: "Sept 2013 - Apr 2014"
+        desc: " Adaptive control of assistive robotic JACO arm and semi-autonomous wheelchair navigation"
+        image: assets/images/RIC.png
+        alt: 
+      - title: "Research Engineer <br> Center for Bionic Medicine <br> (directed by Dr Todd Kuiken)"
+        year: "Mar 2012 - Aug 2013"
+        desc: "Project Lead - Electronics design and support for UL prosthesis control"
+        image: assets/images/RIC.png
+        alt: 
+      # - title: "MSc <br> University of Colorado - Boulder <br> Controls and Robotics "
+      #   year: "2009-2011"
+      #   desc: "Self-assembly of Modular Robotics"
+      #   image: assets/img/timeline/4.jpg
+        alt: 
+        #align: right
+      - title: "Research Intern <br> Almende (The Netherlands) "
+        year: "July 2010-Jan 2011"
+        desc: "Investigate bio-inpsired algorithms for self-assembly of modular robots"
+        image: assets/images/almende.png
+        alt: 
+        #align: right
+      - title: "Research Engineer <br> Robonik (India)"
+        year: "Aug 2008-Jun 2009"
+        desc: "Develop controllers for low-cost biomedical diagnostic devices"
+        image: assets/images/robonik.jpg
+        alt: 
+        #align: right  
+      # - title: "Bachelors of Electronics and Communications <br> V.T.U (India)"
+      #   year: "2004-2008"
+      #   #desc: "Develop controllers for low-cost biomedical diagnostic devices"
+      #   image: assets/img/timeline/4.jpg
+      #   alt: 
+        #align: right    
+
+    # end: "Be Part <br> of Our <br> Story! "
+
+about:
+    title: "About Me"
+    subtitle: Wandering Rehabiliation Engineer
+    text:   I believe engineering and art, when applied in the right way, are the greatest devices towards the betterment of the human condition.  To that end, I apply my skills in fields like robotics and machine learning in different walks of life - Rehabilitation, Agriculture, Environmental Protection. <br> <br> Traveling, meeting different faces of humanity and the cultures we have concocted across the globe is always a source of joy. In my travels, I 've had the fortune of working on robotics research on 3 continents with the finest of folks - engineers, artists, prosthetists, surgeons, philosophers. I have worked as a researcher in 2 world-class rehabilitation hospitals and a bio-medical company.<br><br> I delved into powered prostheses control using natural body movements and vision as part of my Ph.D. research at the University of Washington, Seattle. As part of the engineering R & D at the Rehabilitation Institute of Chicago, I worked on the hardware design of myoelectric control of prostheses. These designs were spun off to create CoApt, one of the most advanced prosthetic control. <br><br> In my mid-twenties, I became fascinated by decentralized algorithms and modular robots for mimicking cellular biology. My Masters' thesis at the University of Colorado explored their application for assembling complex organisms and even self-repair and regeneration. <br><br> My current purpose is to enable mobility in developing nations through accessible assistive devices. 
+
+    footer: Not all who wander are lost.
+    section: about
+
+esperance:
+    title: "What's Espérance"
+    text:   Espérance can be translated into "hope", "dream" or "fantasy". Hope of not just sounding exotic and cool, but also a hope, a dream that technology and engineering can create a better world. 
+    section: esperance
+
+misc:
+    title: "Full Bio"
+    text: "Everything Unsaid"
+    section: misc
+    list:
+      - title: "CV"
+        desc: "CV"
+        icon: fas fa-address-card
+        link: raiCV_html.html  
+            
+      - title: "Outreach"
+        desc: "Outreach"
+        icon: fab fa-accessible-icon
+        link: outreach.html
+
+      - title: "Travel"
+        desc: "Travel"
+        icon: far fa-compass
+        link: travel.html
+
+      # - title: "Full Resume"
+      #   desc: "Full Resume"
+      #   icon: fas fa-robot  
+      #   link:
+
+          
+contact:
+    title: "Contact Us"
+    text: "Lorem ipsum or call 123456789"
+    section: contact
+    
+footer:
+    legal: "Privacy Policy"
+    social:
+
+      - url: https://www.linkedin.com/in/vijethrai-1987/
+        icon: "fab fa-linkedin-in"
+      - url: https://github.com/vijethrai.
+        icon: "fab fa-github"
+
+      - url: raiv@colorado.edu
+        icon: "fas fa-at"
+
+ # {{ site.data.sitetext.ex.ex | markdownify | default: example }}

@@ -1,0 +1,42 @@
+---
+
+---
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Travel</title>
+  <link rel="stylesheet" href="lightbox2/dist/css/lightbox.min.css">
+</head>
+<body>
+
+
+
+<section>
+
+
+
+ <div>
+
+	 	  {% assign image_files = site.static_files | where: "image", true %}
+			{% for myimage in image_files %}
+
+			  <a class="example-image-link" href="{{myimage.path | append: "/full"}}"  data-lightbox="travel-all" data-title="">
+			  	<img src="{{myimage.path | append: "/full"}}" width="309px"></a>
+
+			{% endfor %}
+ 		    		
+<!--   <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" /></a>
+    </div>
+ -->
+
+
+</section>
+
+  <script src="lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+</html>
+

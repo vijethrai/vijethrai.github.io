@@ -1,0 +1,20 @@
+---
+layout: page
+images:
+  - image_path: assets/images/bus.jpg
+    title: Apple Pie
+  - image_path: assets/images/Bronze-W.jpg
+    title: Birthday Cake
+  - image_path: assets/images/P9030210.jpg
+    title: Black Forest
+  - image_path: assets/images/P9050303.jpg
+    title: Brownie
+
+---
+
+
+<ul class="photo-gallery">
+  {% for image in page.images %}
+    <li><img src="{{ image.image_path }}" width="500px" alt="{{ image.title}}"/></li>
+  {% endfor %}
+</ul>

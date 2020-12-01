@@ -1,0 +1,23 @@
+nav:
+  - title: "Skills "
+    section: services
+
+  - title: "Portfolio"
+    section: portfolio
+    
+  - title: "Work Ex"
+    section: timeline
+
+  - title: "Publications"
+    section: publications
+
+  - title: "Full Bio"  
+    section: misc
+
+  - title: "About Me"
+    section: about
+
+  - title: "What's Espérance"
+    section: esperance
+
+
