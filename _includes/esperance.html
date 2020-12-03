@@ -6,15 +6,22 @@
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">{{ site.data.sitetext.esperance.title | default: "esperance" }}</h2>
 <!--           <h3 class="section-subheading text-muted">{{ site.data.sitetext.about.text | default: "" }}</h3> -->
+          <img src="assets/images/Esperance_wiki.jpg"  style="height: 120px;"/>
+          <br>
+          <br>
+
         </div>
       </div>
 
     </div>
 
+
+
+
 <div class="row">
-  
+  <br>
   <div class="col-lg-8 mx-auto text-center">
-      <div class="large text-muted">{{ site.data.sitetext.esperance.text | markdownify }}</div>
+      <h5 {{ site.data.sitetext.esperance.text | markdownify }} </h5>
     </div>
 
 </div>

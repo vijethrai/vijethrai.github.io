@@ -34,7 +34,7 @@ markdown: kramdown
 
 defaults:
   - scope:
-      path: "assets/images/travel/"
+      path: "assets/images/travel/full"
     values:
       image: true
 
