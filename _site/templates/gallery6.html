@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="splide-2.4.20/dist/js/splide.min.js"></script>
+	<link rel="stylesheet" href="splide-2.4.20/dist/css/splide.min.css">
+
+<!-- 	<div id="secondary-slider" class="splide">
+	<div class="splide__track">
+		<ul class="splide__list">
+			
+    		<li class="splide__slide">
+    			<img src="assets/images/bus.jpg" >
+    		</li>
+ 		    
+    		<li class="splide__slide">
+    			<img src="assets/images/P9030210.jpg" >
+    		</li>
+ 		    
+    		<li class="splide__slide">
+    			<img src="assets/images/P9050303.jpg" >
+    		</li>
+ 		      
+
+		</ul>
+	</div>
+</div>
+
+
+ 	<div id="primary-slider" class="splide">
+	<div class="splide__track">
+		<ul class="splide__list">
+			
+    		<li class="splide__slide">
+    			<img src="assets/images/bus.jpg" >
+    		</li>
+ 		    
+    		<li class="splide__slide">
+    			<img src="assets/images/P9030210.jpg" >
+    		</li>
+ 		    
+    		<li class="splide__slide">
+    			<img src="assets/images/P9050303.jpg" >
+    		</li>
+ 		    	
+ 		    		</ul>
+	</div>
+</div> -->
+
+<div id="splide-gallery" class="splide">
+<div class="thumbnails js-thumbnails">
+	<ul class="thumbnails__list">
+		<li class="thumbnails__item" role="button" tabindex="0">
+			<img src="assets/images/Bronze-W.jpg">
+		</li>
+		<li class="thumbnails__item" role="button" tabindex="0">
+			<img src="assets/images/P9030210.jpg">
+		</li>
+
+<!-- 		
+    		<li class="thumbnails__item" role="button" tabindex="0">
+    			<img src="assets/images/bus.jpg" >
+    		</li>
+ 		
+    		<li class="thumbnails__item" role="button" tabindex="0">
+    			<img src="assets/images/P9030210.jpg" >
+    		</li>
+ 		
+    		<li class="thumbnails__item" role="button" tabindex="0">
+    			<img src="assets/images/P9050303.jpg" >
+    		</li>
+ 			 -->
+
+	</ul>
+</div>
+</div>
+
+<script>
+
+
+document.addEventListener( 'DOMContentLoaded', function () {
+	var splide = new Splide( '#splide-gallery' );
+	var images = document.querySelectorAll( '.js-thumbnails li' );
+
+	var activeImage;
+	var activeClass = 'is-active';
+
+	for ( let i = 0, len = images.length; i < len; i++ ) {
+		var image = images[ i ];
+
+		splide.on( 'click', function () {
+			if ( activeImage !== image ) {
+				splide.go( i );
+			}
+		}, image );
+	}
+	
+	splide.on( 'mounted move', function ( newIndex ) {
+		// newIndex will be undefined through the "mounted" event.
+		var image = images[ newIndex !== undefined ? newIndex : splide.index ];
+
+		if ( image && activeImage !== image ) {
+			if ( activeImage ) {
+				activeImage.classList.remove( activeClass );
+			}
+
+			image.classList.add( activeClass );
+			activeImage = image;
+		}
+	} );
+	
+	splide.mount();
+} );
+
+
+</script>
+
