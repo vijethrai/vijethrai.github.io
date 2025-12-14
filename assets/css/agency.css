@@ -663,6 +663,18 @@ header.masthead {
 }
 
 
+.scholar-link {
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+}
+
+.scholar-link:hover {
+  color: rgba(0, 0, 0, 0.95);
+  text-decoration: underline;
+}
 
 
 /*# sourceMappingURL=agency.css.map */
