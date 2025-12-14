@@ -83,7 +83,7 @@ img::-moz-selection { background: transparent; }
 /* header.masthead { text-align: left ; color: white; background-image: url("../images/showcase_rai.jpg"); background-repeat: no-repeat; background-attachment: scroll; background-position: center center; background-size: cover; } */
 header.masthead {
   text-align: left;               
-  color: #0f172a;                  /* dark clean text color */
+  color: #f2f3f6;                  /* dark clean text color */
   background-color: #74767e;       /* soft modern solid color */
   background-image: url("../images/rai_landingcut.jpg");          /* REMOVE old background image */
   background-repeat: no-repeat;
@@ -102,9 +102,19 @@ header.masthead .intro-text .intro-heading { font-size: 25px; font-weight: 700; 
 
 @media (min-width: 768px) { header.masthead .intro-text { padding-top: 300px; padding-bottom: 200px; } header.masthead .intro-text .intro-lead-in { font-size: 40px; font-style: italic; line-height: 40px; margin-bottom: 25px; font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; } header.masthead .intro-text .intro-heading { font-size: 25px; font-weight: 700; line-height: 75px; margin-bottom: 50px; font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; } }
 
+header.masthead .intro-sub {
+  font-size: 1.1rem;     /* desktop size */
+  font-weight: 600;      /* boldness */
+  line-height: 1.5;
+}
+
 .service-heading { margin: 15px 0; text-transform: none; }
 
 #portfolio .portfolio-item { right: 0; margin: 0 0 15px; }
+
+#portfolio {
+  background-color: #111;   /* dark gray */
+}
 
 #portfolio .portfolio-item .portfolio-link { position: relative; display: block; max-width: 400px; margin: 0 auto; cursor: pointer; }
 
@@ -532,6 +542,15 @@ header.masthead {
 #portfolio .portfolio-item .portfolio-link:hover .project-overlay {
   background: rgba(0, 0, 0, 0.65);
 }
+
+/* Portfolio text on dark background */
+#portfolio .section-heading,
+#portfolio .section-subheading,
+#portfolio h4,
+#portfolio p {
+  color: #fff;
+}
+
 
 /* Mobile tuning */
 @media (max-width: 576px) {
