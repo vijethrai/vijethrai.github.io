@@ -418,8 +418,11 @@
               </video>
 
               <p>
-                Explored contact-rich control for Aubo 6 DoF arm for various cleaning tasks. Used position control. 
-               </p>
+                Built contact-rich manipulation demos on an Aubo 6-DoF arm for real-world cleaning tasks.
+                Implemented position-control primitives using task-specific, user-defined coordinate frames
+                to execute stable wiping and scrubbing motions under contact.
+              </p>
+
 
               <ul class="list-inline">
                 <li>Date: 2024</li>
@@ -459,9 +462,9 @@
               </video>
 
               <p>
-                Gait motion capture is expensive using the gold standard marker based systems like VICON. IMU can be used for markerless MoCap 
-                for gait analysis. 
-               </p>
+                Built a low-cost markerless gait pipeline using IMUs as an alternative to lab-grade marker-based systems (e.g., Vicon). 
+                Processed and filtered IMU signals and ran OpenSim inverse kinematics to estimate lower-limb kinematics for gait analysis.
+              </p>
 
               <ul class="list-inline">
                 <li>Date: 2024</li>
@@ -502,9 +505,9 @@
               </video>
 
               <p>
-                Lead electronics team: hardware embedded, firmware design of EMG (moelectric) control of upper limb. Designed PCBs, power systems, firmware.
-               </p>
-
+            Led electronics development for an EMG-based myoelectric control stack for upper-limb systems. 
+              Designed PCBs and power architecture and delivered embedded firmware to acquire, condition, and stream EMG reliably.               </p>
+              </p>
               <ul class="list-inline">
                 <li>Date: 2024</li>
                 <li>Skills: PCB design, NRF, C++</li>
@@ -546,7 +549,8 @@
                 <source src="assets/vids/GazeboMoveIt.mp4" type="video/mp4">
               </video>
               <p>
-                Simulated controls for washroom cleaning on a mobile manipulator platform using ROS, MoveIt, Gazebo packages
+              Built simulation pipelines for mobile manipulation tasks using ROS, MoveIt, and Gazebo.
+                Modeled kinematics, planning, and execution for contact-heavy cleaning tasks prior to real-world deployment.
                </p>
 
               <ul class="list-inline">
@@ -622,9 +626,16 @@
                 <h2 class="text-uppercase">Open Source Leg</h2>
                 <p class="item-intro text-muted">Data-driven Control of Powered Limb</p>
                 <img class="img-fluid d-block mx-auto" src="../assets/images/portfolio/eric.png" style="width: 500px;" alt="Systems Test">
-				<p><p>Powered limbs are better, lighter and more capable than ever. But with great powers comes great need for controllablility. In absence of good control, users still prefer passive limbs for their simplicity. Passive limbs are ill-equpped to handle complex terrains, induces an asymmetric gait resulting in stress to hip and back joints.</p>
+				         <img class="img-fluid d-block mx-auto" src="../assets/images/portfolio/lstm_trans.jpg" style="width: 500px;" alt="Network Architecture">
 
-<p>Open Source Leg is a low-cost prosthetic limb developed by Univ of Michigan to faciliate control research. In collaboration with the Univ of Michigan, we developed a real-time controller to realize our Coordinated Movement Control. Live kinematics were input to a pre-trained neural network to generate refernce trajectory to actuate the prosthetic knee joint.</p>
+                <p><p>Powered limbs are better, lighter and more capable than ever. But with great powers comes great need for controllablility. In absence of good control, users still prefer passive limbs for their simplicity. Passive limbs are ill-equpped to handle complex terrains, induces an asymmetric gait resulting in stress to hip and back joints.</p>
+
+<p>
+Implemented and evaluated real-time controllers on the Open Source Leg platform to enable learning-based prosthetic control.
+ Learned mappings from full-body kinematics to prosthetic reference trajectories, enabling smooth, continuous control of non-rhythmic movements without explicit mode switching.
+  Integrated live kinematic inputs with a neural network–based policy to generate reference trajectories for powered knee actuation.
+Low level control was tuned using PID.
+</p>
 
 <ul class="list-inline">
   <li>Date:</li>
